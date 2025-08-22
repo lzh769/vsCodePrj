@@ -1,9 +1,6 @@
 import React from 'react';
 import { createTheme, ThemeProvider, Button } from '@mui/material';
 import { deepmerge } from '@mui/utils';
-//  import * as React from 'react';
-import ReactDOM from 'react-dom';
-// import Button1 from '@material-ui/core/Button';
 
 const theme = createTheme({
   palette: {
@@ -14,7 +11,7 @@ const theme = createTheme({
       main: '#f50057',
     },
   },
-  typography: {
+  typography: {                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     fontFamily: 'Arial, sans-serif',
     fontSize: 14,
   },
@@ -45,7 +42,7 @@ const ButtonTest = () => {
   return (
     <ThemeProvider theme={theme3}>
       <Button variant="contained" color="secondary1">
-        Click me1!
+        Click me!
       </Button>
     </ThemeProvider>
   );
