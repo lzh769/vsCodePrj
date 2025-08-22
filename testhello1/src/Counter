@@ -1,0 +1,26 @@
+import React from 'react';
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 }; // 初始化 state
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={(Add) => this.setState({ count: this.state.count + 1 })}>
+          +
+        </button>
+        <button onClick={(Sub) => this.setState({ count: this.state.count - 1 })}>
+          -
+        </button>
+      </div>
+    );
+  }
+ 
+}
+
+export default Counter;
+ 
