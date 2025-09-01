@@ -1,6 +1,7 @@
-import React from 'react';
+ 
 import { createTheme, ThemeProvider, Button } from '@mui/material';
-import { deepmerge } from '@mui/utils';
+import { deepmerge } from '@mui/utils';  
+import React, { useState } from 'react';
 
 const theme = createTheme({
   palette: {
@@ -35,15 +36,29 @@ const theme2 = createTheme({
 });
 
 
+const theme3 = createTheme(deepmerge(theme, theme2)); 
 
-const theme3 = createTheme(deepmerge(theme, theme2));
 
 const ButtonTest = () => {
+   const [count2, setCount] = useState(0); // 使用 useState
+
+  const increment = () => {
+    setCount(count2 + 1);
+  };
+  const decrement = () => {
+    setCount(count2 - 1);
+  };
+
   return (
-    <ThemeProvider theme={theme3}>
+    <ThemeProvider theme={theme3}> 
       <Button variant="contained" color="secondary1">
         Click me!
       </Button>
+        <div>
+        <p>22當前計數: {count2}</p>
+        <button onClick={increment}>增加</button>
+        <button onClick={decrement}>decrease</button>
+       </div>
     </ThemeProvider>
   );
 };

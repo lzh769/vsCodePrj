@@ -4,7 +4,10 @@ import InputForm from './InputForm';
 import TodoList from './TodoList';
 
 import ButtonTest from './ButtonTest';
-import TestHello from './TestHello';
+import TestHello from './TestHello'; 
+// import Counter from './Counter'; 
+import CounterCos from './CounterCos.jsx'; 
+
 
 function App() {
   return (
@@ -27,7 +30,9 @@ function App() {
         <InputForm  />
         <TestHello  name='bbbt'/>
       <TodoList  />  
-         <ButtonTest />
+         <ButtonTest /> 
+          
+         {/* <CounterCos />  */}
          
          
       </header>
