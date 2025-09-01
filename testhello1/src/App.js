@@ -6,7 +6,9 @@ import TodoList from './TodoList';
 import ButtonTest from './ButtonTest';
 import TestHello from './TestHello'; 
 // import Counter from './Counter'; 
-import CounterCos from './CounterCos.jsx'; 
+// import CounterCos from './CounterCos.jsx'; 
+import UseEffect from './UseEffect.jsx'; 
+import ContextCnt from './ContextCnt.jsx'; 
 
 
 function App() {
@@ -32,9 +34,10 @@ function App() {
       <TodoList  />  
          <ButtonTest /> 
           
+          <UseEffect /> 
+          <ContextCnt /> 
+         
          {/* <CounterCos />  */}
-         
-         
       </header>
       
     </div>
