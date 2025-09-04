@@ -9,7 +9,8 @@ import TestHello from './TestHello';
 // import CounterCos from './CounterCos.jsx'; 
 import UseEffect from './UseEffect.jsx'; 
 import ContextCnt from './ContextCnt.jsx'; 
-
+import ParentComponent from './ParentComponent.jsx'; 
+import Counter1 from './features/counter/Counter1.jsx'
 
 function App() {
   return (
@@ -31,13 +32,16 @@ function App() {
         </a>
         <InputForm  />
         <TestHello  name='bbbt'/>
-      <TodoList  />  
+        <TodoList  />  
          <ButtonTest /> 
           
           <UseEffect /> 
           <ContextCnt /> 
          
          {/* <CounterCos />  */}
+         <ParentComponent /> 
+         <Counter1 /> 
+         
       </header>
       
     </div>
