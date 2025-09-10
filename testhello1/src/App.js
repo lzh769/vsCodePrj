@@ -15,6 +15,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home.jsx'; 
 import User from './User.jsx'; 
 import SearchPage from './SearchPage.jsx'; 
+import Details from './Details.jsx'; 
 
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/user/:id" element={<User />} />
           <Route path="/search" element={<SearchPage />} />
+          
+          <Route path="/details" element={<Details />} />
+          
         </Routes>
       </BrowserRouter>
 
