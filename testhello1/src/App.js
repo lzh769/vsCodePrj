@@ -10,7 +10,12 @@ import TestHello from './TestHello';
 import UseEffect from './UseEffect.jsx'; 
 import ContextCnt from './ContextCnt.jsx'; 
 import ParentComponent from './ParentComponent.jsx'; 
-import Counter1 from './features/counter/Counter1.jsx'
+import Counter1 from './features/counter/Counter1.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home.jsx'; 
+import User from './User.jsx'; 
+import SearchPage from './SearchPage.jsx'; 
+
 
 function App() {
   return (
@@ -30,6 +35,14 @@ function App() {
         >
           Learn React
         </a>
+     <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/user/:id" element={<User />} />
+          <Route path="/search" element={<SearchPage />} />
+        </Routes>
+      </BrowserRouter>
+
         <InputForm  />
         <TestHello  name='bbbt'/>
         <TodoList  />  
@@ -42,6 +55,9 @@ function App() {
          <ParentComponent /> 
          <Counter1 /> 
          
+
+      
+
       </header>
       
     </div>
